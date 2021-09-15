@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="login.component.css">
+
+</head>
+<body>
+    
+    <form class="form" action="">
+        <div class="card">
+            <div class="card-top">
+                <h2 class="titulo">Seja bem-vindo!</h2>
+                <p>Realize o Login</p>
+            </div>
+            <div class="card-grupo">
+                <label>Usuário</label>
+                <input type="text" name="Usuário" placeholder="Digite seu usuario" (input)="onUserEnter($event)" required>
+            </div>
+
+            <div class="card-grupo">
+                <label>Senha</label>
+                <input type="password" name="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <div class="card-grupo">
+                <button type="button" [routerLink]="['/home']">Acessar</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
